@@ -322,7 +322,7 @@ $(function () {
       .bootstrapTooltip('show')
     var $tooltip = $container.find('.tooltip')
 
-    // this is some dumb hack shit because sub pixels in firefox
+    // This is some dumb hack shit because sub pixels in Firefox
     var top = Math.round($target.offset().top + ($target[0].offsetHeight / 2) - ($tooltip[0].offsetHeight / 2))
     var top2 = Math.round($tooltip.offset().top)
     var topDiff = top - top2

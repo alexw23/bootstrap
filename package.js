@@ -1,4 +1,4 @@
-// package metadata file for Meteor.js
+// Package metadata file for Meteor.js
 
 /* jshint strict:false */
 /* global Package:true */

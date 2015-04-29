@@ -228,7 +228,7 @@ $(function () {
         $('#close').trigger('click')
       })
       .one('hidden.bs.modal', function () {
-        // after one open-close cycle
+        // After one open-close cycle
         assert.ok(!$('#modal-test').is(':visible'), 'modal hidden')
         $(this)
           .one('shown.bs.modal', function () {

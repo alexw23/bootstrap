@@ -9,7 +9,7 @@
 /* jshint es3:false */
 /* global JSZip, less, autoprefixer, saveAs, UglifyJS, __configBridge, __js, __less, __fonts */
 
-window.onload = function () { // wait for load in a dumb way because B-0
+window.onload = function () { // Wait for load in a dumb way because B-0
   'use strict';
 
   var cw = '/*!\n' +
@@ -58,7 +58,7 @@ window.onload = function () { // wait for load in a dumb way because B-0
   }
 
   function getQueryParam(key) {
-    key = key.replace(/[*+?^$.\[\]{}()|\\\/]/g, '\\$&') // escape RegEx meta chars
+    key = key.replace(/[*+?^$.\[\]{}()|\\\/]/g, '\\$&') // Escape RegEx meta chars
     var match = location.search.match(new RegExp('[?&]' + key + '=([^&]+)(&|$)'))
     return match && decodeURIComponent(match[1].replace(/\+/g, ' '))
   }
@@ -93,7 +93,7 @@ window.onload = function () { // wait for load in a dumb way because B-0
       try {
         showError('<strong>Ruh roh!</strong> Could not save gist file, configuration not saved.', err)
       } catch (sameErr) {
-        // deliberately ignore the error
+        // Deliberately ignore the error
       }
       callback('<none>', '<none>')
     })
@@ -249,7 +249,7 @@ window.onload = function () { // wait for load in a dumb way because B-0
       if (filename === 'variables.less' && vars) lessSource += generateCustomLess(vars)
     })
 
-    lessSource = lessSource.replace(/@import[^\n]*/gi, '') // strip any imports
+    lessSource = lessSource.replace(/@import[^\n]*/gi, '') // Strip any imports
     return lessSource
   }
 
@@ -482,7 +482,7 @@ window.onload = function () { // wait for load in a dumb way because B-0
     })
   });
 
-  // browser support alert
+  // Browser support alert
   (function () {
     function failback() {
       $('.bs-docs-section, .bs-docs-sidebar').css('display', 'none')

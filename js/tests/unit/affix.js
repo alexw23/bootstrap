@@ -70,7 +70,7 @@ $(function () {
 
       setTimeout(function () {
         window.scroll(0, 0)
-      }, 16) // for testing in a browser
+      }, 16) // For testing in a browser
     }, 0)
   })
 

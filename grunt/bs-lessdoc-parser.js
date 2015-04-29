@@ -12,7 +12,7 @@ var Markdown = require('markdown-it');
 function markdown2html(markdownString) {
   var md = new Markdown();
 
-  // the slice removes the <p>...</p> wrapper output by Markdown processor
+  // The slice removes the <p>...</p> wrapper output by Markdown processor.
   return md.render(markdownString.trim()).slice(3, -5);
 }
 
@@ -89,8 +89,8 @@ Tokenizer.prototype.unshift = function (token) {
 };
 
 Tokenizer.prototype._shift = function () {
-  // returning null signals EOF
-  // returning undefined means the line was ignored
+  // Returning null signals EOF.
+  // Returning undefined means the line was ignored.
   if (this._next !== undefined) {
     var result = this._next;
     this._next = undefined;

@@ -28,7 +28,7 @@
 
     if (!selector) {
       selector = $this.attr('href')
-      selector = selector && selector.replace(/.*(?=#[^\s]*$)/, '') // strip for ie7
+      selector = selector && selector.replace(/.*(?=#[^\s]*$)/, '') // Strip for IE7
     }
 
     if ($this.parent('li').hasClass('active')) return
@@ -82,7 +82,7 @@
           .attr('aria-expanded', true)
 
       if (transition) {
-        element[0].offsetWidth // reflow for transition
+        element[0].offsetWidth // Reflow for transition
         element.addClass('in')
       } else {
         element.removeClass('fade')
